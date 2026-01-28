@@ -1,0 +1,52 @@
+
+<html>
+    
+<script>
+class Calculator{
+    constructor(num1,num2){
+
+        this.num1 = num1
+        this.num2 = num2
+        
+    }
+    Addition(){
+
+        return this.num1 + this.num2
+
+    }
+    Substraction(){
+
+        return this.num1  -this.num2
+    }
+    Division(){
+
+        return this.num1 / this.num2
+    }
+    Multiplication(){
+
+        return this.num1 * this.num2
+    }
+
+}
+
+number1 = parseInt(prompt("Enter your first number : "))
+number2 = parseInt(prompt("Enter your second number : "))
+operaters = prompt("Enter your operator : ")
+
+
+const calc = new Calculator(number1,number2)
+
+if(operaters == "+"){
+    console.log(calc.Addition())
+}else if(operaters == "-"){
+    console.log(calc.Substraction())
+}else if(operaters == "/"){
+    console.log(calc.Division())
+}else if(operaters == "*"){
+    console.log(calc.Multiplication())
+}else{
+    console.log("Invalid operator")
+}
+</script>
+
+</html>
