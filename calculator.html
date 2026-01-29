@@ -2,7 +2,9 @@
 <html>
     
 <script>
+
 class Calculator{
+    
     constructor(num1,num2){
 
         this.num1 = num1
@@ -36,16 +38,27 @@ operaters = prompt("Enter your operator : ")
 
 const calc = new Calculator(number1,number2)
 
+
 if(operaters == "+"){
-    console.log(calc.Addition())
+
+    document.write(calc.Addition())
+
 }else if(operaters == "-"){
-    console.log(calc.Substraction())
+
+    document.write(calc.Substraction())
+    
 }else if(operaters == "/"){
-    console.log(calc.Division())
+
+    document.write(calc.Division())
+
 }else if(operaters == "*"){
-    console.log(calc.Multiplication())
+
+    document.write(calc.Multiplication())
+
 }else{
-    console.log("Invalid operator")
+
+    document.write("Invalid operator")
+
 }
 </script>
 
